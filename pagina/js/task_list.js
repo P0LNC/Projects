@@ -29,7 +29,7 @@ function deleteTask(title) {
   console.log(title)
   let tasks = JSON.parse(localStorage.getItem('tasks'));
   for(let i = 0; i < tasks.length; i++) {
-    if(tasks[i].title == title) {
+    if(tasks[i].title === title) {
       tasks.splice(i, 1);
     }
   }
